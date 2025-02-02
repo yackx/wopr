@@ -1,0 +1,20 @@
+# Based on Alacrity 'konsole' theme
+
+# Grey
+color1      = #e3e3e3
+# Cyan
+color2      = #54ffff
+# Green
+color3      = #54ff54
+# Yellow
+color4      = #ffff54
+# Blue
+color5      = #5454ff
+# Magenta
+color6      = #ff54ff
+# White
+accent      = #ffffff
+# Red
+danger      = #ff5454
+# Dark
+background  = #1f1f1f

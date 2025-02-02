@@ -1,0 +1,14 @@
+color1        = #0ccc68
+color2      = #D1C000
+# Teal
+color3       = #04D1B5
+# Yellow
+color4        = #ffff00
+# Purple
+color5        = #800080
+# Magenta
+color6        = #ff00ff
+
+accent         = #C0D1BD
+danger         = #D12C0A
+background     = #000000

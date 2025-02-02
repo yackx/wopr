@@ -1,0 +1,17 @@
+{HEADER}
+
+
+
+{WINNER}
+
+
+{STATS_TABLE}
+
+
+{FATALITIES_TOTAL}
+
+
+Press ENTER to continue
+? {BUFFER}█
+
+{BOTTOM_BAR}

@@ -1,0 +1,18 @@
+{HEADER}
+{HALIGN:LEFT}
+
+
+{COLOR:3}> WOPR/SETTINGS
+
+General
+
+{GENERAL_SETTINGS}
+
+Thermonuclear war
+
+{WAR_SETTINGS}
+
+? {BUFFER}█
+
+{ERROR_MESSAGE}
+{BOTTOM_BAR}

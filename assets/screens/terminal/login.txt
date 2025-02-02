@@ -1,0 +1,10 @@
+{HEADER}
+{HALIGN:LEFT}
+
+
+   Login: falkenj
+Password: ********
+
+{CONNECTING}
+{CONNECTED}
+{BOTTOM_BAR}

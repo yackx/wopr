@@ -1,0 +1,17 @@
+{HEADER}
+{HALIGN:LEFT}
+
+
+{COLOR:3}> WOPR/PROG/WAR
+
+Choose a scenario
+
+{SCENARIOS}
+
+[P] Partly deployed (as is)
+[F] Fully deployed
+
+? {BUFFER}█
+
+{ERROR_MESSAGE}
+{BOTTOM_BAR}

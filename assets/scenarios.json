@@ -1,0 +1,697 @@
+{
+  "launchSites": [
+    {
+      "country": "RU",
+      "sites": [
+        {
+          "name": "Dombarovskiy",
+          "type": "facility",
+          "coord": {
+            "lat": 50.75,
+            "lon": 59.50
+          }
+        },
+        {
+          "name": "Irkutsk",
+          "type": "facility",
+          "coord": {
+            "lat": 52.32,
+            "lon": 104.0
+          }
+        },
+        {
+          "name": "Kartaly",
+          "type": "facility",
+          "coord": {
+            "lat": 53.98,
+            "lon": 57.85
+          }
+        },
+        {
+          "name": "Kozel'sk",
+          "type": "facility",
+          "coord": {
+            "lat": 54.03,
+            "lon": 35.76
+          }
+        },
+        {
+          "name": "Krasnoyarsk",
+          "type": "facility",
+          "coord": {
+            "lat": 56.35,
+            "lon": 92.45
+          }
+        },
+        {
+          "name": "Nizhniy Tagil",
+          "type": "facility",
+          "coord": {
+            "lat": 58.67,
+            "lon": 60.55
+          }
+        },
+        {
+          "name": "Novosibirsk",
+          "type": "facility",
+          "coord": {
+            "lat": 55.32,
+            "lon": 83.00
+          }
+        },
+        {
+          "name": "Sub RU Baltic Sea",
+          "type": "submarine",
+          "country": "RU",
+          "coord": {
+            "lat": 43.441855,
+            "lon": 38.063915
+          }
+        },
+        {
+          "name": "Sub RU Bering Sea",
+          "type": "submarine",
+          "coord": {
+            "lat": 55.79,
+            "lon": 167.58
+          }
+        }
+      ]
+    },
+    {
+      "country": "FR",
+      "sites": [
+        {
+          "name": "Ile-Longue",
+          "type": "facility",
+          "coord": {
+            "lat": 48.306389,
+            "lon": -4.506667
+          }
+        },
+        {
+          "name": "Luxeuil-les-Bains",
+          "type": "facility",
+          "coord": {
+            "lat": 47.8169,
+            "lon": 6.3814
+          }
+        },
+        {
+          "name": "Istres",
+          "type": "facility",
+          "coord": {
+            "lat": 43.5151,
+            "lon": 4.9895
+          }
+        }
+      ]
+    },
+    {
+      "country": "GB",
+      "sites": [
+        {
+          "name": "Faslane",
+          "type": "facility",
+          "coord": {
+            "lat": 56.0375,
+            "lon": -4.815278
+          }
+        },
+        {
+          "name": "Sub GB Baltic Sea",
+          "type": "submarine",
+          "coord": {
+            "lat": 59.5000,
+            "lon": 22.413611
+          }
+        },
+        {
+          "name": "Sub GB Adriatic Sea",
+          "type": "submarine",
+          "coord": {
+            "lat": 43.992881,
+            "lon": 14.443084
+          }
+        },
+        {
+          "name": "Sub GB Aegean Sea",
+          "type": "submarine",
+          "coord": {
+            "lat": 38.905540,
+            "lon": 24.384116
+          }
+        }
+      ]
+    },
+    {
+      "country": "US",
+      "sites": [
+        {
+          "name": "10th Missile Squadron - A01",
+          "type": "facility",
+          "coord": {
+            "lat": 47.28167,
+            "lon": -110.80083
+          }
+        },
+        {
+          "name": "10th Missile Squadron - B01",
+          "type": "facility",
+          "coord": {
+            "lat": 47.28528,
+            "lon": -110.36
+          }
+        },
+        {
+          "name": "10th Missile Squadron - C01",
+          "type": "facility",
+          "coord": {
+            "lat": 47.09556,
+            "lon": -110.16306
+          }
+        },
+        {
+          "name": "10th Missile Squadron - D01",
+          "type": "facility",
+          "coord": {
+            "lat": 47.37611,
+            "lon": -109.81444
+          }
+        },
+        {
+          "name": "10th Missile Squadron - E01",
+          "type": "facility",
+          "coord": {
+            "lat": 47.45361,
+            "lon": -109.4175
+          }
+        },
+        {
+          "name": "12th Missile Squadron - F01",
+          "type": "facility",
+          "coord": {
+            "lat": 47.60472,
+            "lon": -112.31056
+          }
+        },
+        {
+          "name": "490th Missile Squadron - K01",
+          "type": "facility",
+          "coord": {
+            "lat": 46.44528,
+            "lon": -109.80139
+          }
+        },
+        {
+          "name": "564th Missile Squadron - P01",
+          "type": "facility",
+          "coord": {
+            "lat": 48.205,
+            "lon": -111.90861
+          }
+        },
+        {
+          "name": "740th Missile Squadron - A01",
+          "type": "facility",
+          "coord": {
+            "lat": 47.96667,
+            "lon": -100.58083
+          }
+        },
+        {
+          "name": "741th Missile Squadron - F01",
+          "type": "facility",
+          "coord": {
+            "lat": 47.89611,
+            "lon": -101.67389
+          }
+        },
+        {
+          "name": "742nd Missile Squadron - K01",
+          "type": "submarine",
+          "coord": {
+            "lat": 48.55056,
+            "lon": -102.12
+          }
+        },
+        {
+          "name": "Sub US Pacific aim EU",
+          "type": "submarine",
+          "coord": {
+            "lat": 47.605644,
+            "lon": -10.009735
+          }
+        },
+        {
+          "name": "Sub US East Coast",
+          "type": "submarine",
+          "coord": {
+            "lat": 36.259279,
+            "lon": -71.008031
+          }
+        },
+        {
+          "name": "Sub US Bering Sea 02",
+          "type": "submarine",
+          "coord": {
+            "lat": 56.93,
+            "lon": -174.49
+          }
+        },
+        {
+          "name": "Sub US Bering Sea 02",
+          "type": "submarine",
+          "coord": {
+            "lat": 56.9302,
+            "lon": -174.49
+          }
+        },
+        {
+          "name": "Sub US West Coast",
+          "type": "submarine",
+          "coord": {
+            "lat": 46.82,
+            "lon": -125.11
+          }
+        }
+      ]
+    },
+    {
+      "country": "CN",
+      "sites": [
+        {
+          "name": "Luoyang (54 Base)",
+          "type": "facility",
+          "coord": {
+            "lat": 34.54496944444444,
+            "lon": 112.1487194444445
+          }
+        },
+        {
+          "name": "Huaihua (55 Base)",
+          "type": "facility",
+          "coord": {
+            "lat": 27.53694442452626,
+            "lon": 109.9859853079458
+          }
+        },
+        {
+          "name": "Kunming (53 Base)",
+          "type": "facility",
+          "coord": {
+            "lat": 24.99325305515248,
+            "lon": 102.8346921906712
+          }
+        },
+        {
+          "name": "Xining (56 Base)",
+          "type": "facility",
+          "coord": {
+            "lat": 36.59963041692814,
+            "lon": 101.7865102297955
+          }
+        },
+        {
+          "name": "Nanyuan",
+          "type": "facility",
+          "coord": {
+            "lat": 39.79973147095347,
+            "lon": 116.4028480619133
+          }
+        },
+        {
+          "name": "Taiyuan",
+          "type": "facility",
+          "coord": {
+            "lat": 38.80864238220916,
+            "lon": 111.6176079963528
+          }
+        },
+        {
+          "name": "Jianggezhuang",
+          "type": "facility",
+          "coord": {
+            "lat": 36.11569444444444,
+            "lon": 120.5757666666667
+          }
+        },
+        {
+          "name": "Bohai shipyard",
+          "type": "facility",
+          "coord": {
+            "lat": 40.71284444444445,
+            "lon": 121.0023111111111
+          }
+        }
+      ]
+    },
+    {
+      "country": "IN",
+      "sites": [
+        {
+          "name": "Very short range (aim PK) 01",
+          "type": "mobile",
+          "range": 250,
+          "capacity": 16,
+          "coord": {
+            "lat": 23.7524,
+            "lon": 69.2932
+          }
+        },
+        {
+          "name": "Very short range (aim PK) 02",
+          "type": "mobile",
+          "range": 250,
+          "capacity": 16,
+          "coord": {
+            "lat": 27.11,
+            "lon": 70.22
+          }
+        },
+        {
+          "name": "Short range (aim PK) 03",
+          "type": "mobile",
+          "range": 700,
+          "capacity": 16,
+          "coord": {
+            "lat": 28.24,
+            "lon": 72.57
+          }
+        },
+        {
+          "name": "Short range (aim PK) 04",
+          "type": "mobile",
+          "coord": {
+            "lat": 31.94,
+            "lon": 76.60
+          }
+        },
+        {
+          "name": "Sub IN Black Sea 01",
+          "type": "submarine",
+          "coord": {
+            "lat": 41.90,
+            "lon": 37.58
+          }
+        },
+        {
+          "name": "Random dot 01 - West - Agni-II",
+          "type": "facility",
+          "range": 3000,
+          "coord": {
+            "lat": 23.48,
+            "lon": 72.08
+          }
+        },
+        {
+          "name": "Random dot 02 - North - Agni-III",
+          "type": "facility",
+          "range": 4000,
+          "coord": {
+            "lat": 30.36,
+            "lon": 77.07
+          }
+        }
+      ]
+    }
+  ],
+  "scenarios": [
+    {
+      "short": "North sea contamination [P] (RU/FR-GB-EU)",
+      "description": "After several marine cable sabotage occurrence and countless cyberattacks attributed to Russia, European nations are on edge. Tension reaches an all-time high when French, British and Russian ships engage fire in the North Sea. The nuclear conflict extends to the European Union.",
+      "firstStrike": "Russia",
+      "initialMapView": "Europe",
+      "parties": [
+        {
+          "name": "Russia",
+          "enemies": [
+            "European Union",
+            "Great Britain",
+            "France"
+          ],
+          "countryCodes": [
+            "RU",
+            "BY",
+            "KZ",
+            "UZ"
+          ],
+          "warheads": 1710
+        },
+        {
+          "name": "France",
+          "enemies": [
+            "Russia"
+          ],
+          "countryCodes": [
+            "FR"
+          ],
+          "warheads": 280
+        },
+        {
+          "name": "Great Britain",
+          "shortName": "GB",
+          "enemies": [
+            "Russia"
+          ],
+          "countryCodes": [
+            "GB"
+          ],
+          "warheads": 120
+        },
+        {
+          "name": "European Union",
+          "shortName": "EU",
+          "enemies": [
+            "Russia"
+          ],
+          "countryCodes": [
+            "BE",
+            "NL",
+            "PL",
+            "UA",
+            "ES",
+            "PT",
+            "DE",
+            "IT",
+            "GR",
+            "RO",
+            "SE",
+            "IE",
+            "CZ",
+            "EE",
+            "LT",
+            "LV",
+            "AT",
+            "SK",
+            "HU",
+            "HR",
+            "BA",
+            "RS",
+            "BG",
+            "FI",
+            "NO",
+            "DK",
+            "MT"
+          ],
+          "warheads": 0
+        }
+      ]
+    },
+    {
+      "short": "North sea escalation [P] (RU/FR-GB)",
+      "firstStrike": "Russia",
+      "initialMapView": "Europe",
+      "description": "After several marine cable sabotage occurrence and countless cyberattacks attributed to Russia, European nations are on edge. Tension reaches an all-time high when French, British and Russian ships engage fire in the North Sea. The nuclear conflict that follows remains limited to the three parties.",
+      "parties": [
+        {
+          "name": "Russia",
+          "enemies": [
+            "Great Britain",
+            "France"
+          ],
+          "countryCodes": [
+            "RU",
+            "BY",
+            "KZ",
+            "UZ"
+          ],
+          "warheads": 1710
+        },
+        {
+          "name": "France",
+          "enemies": [
+            "Russia"
+          ],
+          "countryCodes": [
+            "FR"
+          ],
+          "warheads": 280
+        },
+        {
+          "name": "Great Britain",
+          "shortName": "GB",
+          "enemies": [
+            "Russia"
+          ],
+          "countryCodes": [
+            "GB"
+          ],
+          "warheads": 120
+        }
+      ]
+    },
+    {
+      "short": "Chinese wall destruction [P] (RU/CN)",
+      "firstStrike": "Russia",
+      "initialMapView": "Russia",
+      "description": "A lingering trade disagreement and several border incidents lead to a nuclear conflict between Russia and China. With a modest nuclear arsenal, how much damage will China inflict to Russia?",
+      "parties": [
+        {
+          "name": "Russia",
+          "enemies": [
+            "China"
+          ],
+          "countryCodes": [
+            "RU"
+          ],
+          "warheads": 1710
+        },
+        {
+          "name": "China",
+          "enemies": [
+            "Russia"
+          ],
+          "countryCodes": [
+            "CN"
+          ],
+          "warheads": 24
+        }
+      ]
+    },
+    {
+      "short": "Greenland occupation [P] (US/RU/FR-GB-EU)",
+      "description": "The US invokes national security to justify an invasion and an occupation of Greenland while Russia increases pressure in Ukraine. Incursions in the Baltic States hints at full-scale invasion. It triggers EU treaty assistance. Stuck between a rock and a hard place, France launches, followed by Great Britain. The USA and Russia strike back.",
+      "firstStrike": "France",
+      "initialMapView": "Europe",
+      "parties": [
+        {
+          "name": "USA",
+          "enemies": [
+            "European Union",
+            "France",
+            "Russia"
+          ],
+          "countryCodes": [
+            "US"
+          ],
+          "warheads": 1770
+        },
+        {
+          "name": "Russia",
+          "enemies": [
+            "European Union",
+            "Great Britain",
+            "France",
+            "USA"
+          ],
+          "countryCodes": [
+            "RU",
+            "BY",
+            "KZ",
+            "UZ"
+          ],
+          "warheads": 1710
+        },
+        {
+          "name": "France",
+          "enemies": [
+            "Russia",
+            "USA"
+          ],
+          "countryCodes": [
+            "FR"
+          ],
+          "warheads": 280
+        },
+        {
+          "name": "Great Britain",
+          "shortName": "GB",
+          "enemies": [
+            "Russia"
+          ],
+          "countryCodes": [
+            "GB"
+          ],
+          "warheads": 120
+        },
+        {
+          "name": "European Union",
+          "shortName": "EU",
+          "enemies": [
+            "Russia",
+            "USA"
+          ],
+          "countryCodes": [
+            "BE",
+            "NL",
+            "PL",
+            "UA",
+            "ES",
+            "PT",
+            "DE",
+            "IT",
+            "GR",
+            "RO",
+            "SE",
+            "IE",
+            "CZ",
+            "EE",
+            "LT",
+            "LV",
+            "AT",
+            "SK",
+            "HU",
+            "HR",
+            "BA",
+            "RS",
+            "BG",
+            "FI",
+            "NO",
+            "DK",
+            "MT"
+          ],
+          "warheads": 0
+        }
+      ]
+    },
+    {
+      "short": "Debug simple scenario",
+      "firstStrike": "Belgium",
+      "initialMapView": "Europe",
+      "description": "A trivial debugging scenario - ignore",
+      "parties": [
+        {
+          "name": "France",
+          "enemies": [
+            "Great Britain"
+          ],
+          "countryCodes": [
+            "FR"
+          ],
+          "warheads": 2
+        },
+        {
+          "name": "Great Britain",
+          "enemies": [
+            "France"
+          ],
+          "countryCodes": [
+            "GB"
+          ],
+          "warheads": 3
+        }
+      ]
+    }
+  ]
+}

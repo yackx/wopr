@@ -1,0 +1,17 @@
+{HEADER}
+{HALIGN:LEFT}
+
+
+{COLOR:3}> WOPR/THEMES
+
+Choose a theme
+
+{THEMES}
+
+? {BUFFER}█
+
+{CURRENT_THEME_NAME}
+
+{CURRENT_SAMPLE}
+
+{BOTTOM_BAR}

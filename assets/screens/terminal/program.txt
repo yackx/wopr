@@ -1,0 +1,16 @@
+{HEADER}
+{HALIGN:LEFT}
+
+
+{COLOR:3}> WOPR/PROG
+
+Choose a program
+
+    1. Tic Tac Toe
+    2. Chess
+    3. Thermonuclear war
+
+? {BUFFER}█
+
+{ERROR_MESSAGE}
+{BOTTOM_BAR}

@@ -1,0 +1,23 @@
+{HEADER}
+{HALIGN:LEFT}
+
+
+{COLOR:3}> WOPR/PROG/WAR
+
+Select simulation speed
+
+  1. Real time
+  2. Fast
+  3. Very fast
+  4. Instant
+
+? {BUFFER}█
+
+
+During the simulation:
+
+  F5 Slower
+  F6 Faster
+  C. Show/hide city labels
+  T. Show/hide trajectories
+{BOTTOM_BAR}

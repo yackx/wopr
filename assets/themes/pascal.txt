@@ -1,0 +1,17 @@
+# Grey
+color1         = #dddddd
+# Cyan
+color2         = #00ffff
+# Orange
+color3         = #ffa500
+# Yellow
+color4         = #ffff00
+# Olive
+color5         = #808000
+# Magenta
+color6         = #ff00ff
+# White
+accent         = #ffffff
+
+danger         = #ff0000
+background     = #0000aa

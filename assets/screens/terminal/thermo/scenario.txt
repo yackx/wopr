@@ -1,0 +1,17 @@
+{HEADER}
+{HALIGN:LEFT}
+
+
+{COLOR:3}> WOPR/PROG/WAR
+
+{SCENARIO_TITLE}
+
+{SCENARIO_DETAILS}
+
+Belligerents (warheads):
+
+{BELLIGERENTS}
+
+Press ENTER to continue
+? {BUFFER}█
+{BOTTOM_BAR}
