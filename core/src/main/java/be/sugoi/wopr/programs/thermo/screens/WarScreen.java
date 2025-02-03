@@ -4,6 +4,7 @@ import be.sugoi.wopr.GdxFontHelper;
 import be.sugoi.wopr.GdxHelper;
 import be.sugoi.wopr.Main;
 import be.sugoi.wopr.Projection;
+import be.sugoi.wopr.dm.ScreenResolution;
 import be.sugoi.wopr.input.KeyboardSingle;
 import be.sugoi.wopr.programs.thermo.entities.*;
 import be.sugoi.wopr.programs.thermo.entities.scenario.Scenario;
@@ -507,6 +508,7 @@ public class WarScreen extends BaseScreen {
         g.batch.setProjectionMatrix(g.camera.combined);
         g.shape.setProjectionMatrix(g.camera.combined);
         g.fm.setScaleForAll(g.fitViewport.getWorldHeight() / Gdx.graphics.getHeight());
+        g.settings.setWindowedScreenResolution(new ScreenResolution(width, height));
     }
 
     @Override

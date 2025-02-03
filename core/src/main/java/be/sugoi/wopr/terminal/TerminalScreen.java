@@ -2,6 +2,7 @@ package be.sugoi.wopr.terminal;
 
 import be.sugoi.wopr.GdxFontHelper;
 import be.sugoi.wopr.Main;
+import be.sugoi.wopr.dm.ScreenResolution;
 import be.sugoi.wopr.input.KeyboardBuffer;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
@@ -91,7 +92,7 @@ abstract public class TerminalScreen extends BaseScreen {
     @Override
     public void show() {
         Gdx.input.setInputProcessor(kb);
-        g.fm.setScaleForAll(g.screenViewport.getWorldHeight() / Main.SCREEN_HEIGHT);
+        g.fm.setScaleForAll(g.screenViewport.getWorldHeight() / Main.DEFAULT_SCREEN_HEIGHT);
         computeFontDimensions();
         template = loadTemplate(templatePath());
         clock = 0;
@@ -330,7 +331,9 @@ abstract public class TerminalScreen extends BaseScreen {
     @Override
     public void resize(int width, int height) {
         g.screenViewport.update(width, height, true);
-        g.fm.setScaleForAll(g.screenViewport.getWorldHeight() / Main.SCREEN_HEIGHT);
+        g.fm.setScaleForAll(g.screenViewport.getWorldHeight() / Main.DEFAULT_SCREEN_HEIGHT);
+        g.settings.setWindowedScreenResolution(new ScreenResolution(width, height));
+        computeFontDimensions();
     }
 
     @Override

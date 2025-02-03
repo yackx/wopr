@@ -36,7 +36,8 @@ public class SettingsScreen extends TerminalScreen {
     private List<Label> renderGeneralSettings() {
         var data = List.of(
             Pair.of("Skip login screen", booleanToString(g.settings.isSkipLogingScreen())),
-            Pair.of("Sound effects", booleanToString(g.settings.isSoundEffects()))
+            Pair.of("Sound effects", booleanToString(g.settings.isSoundEffects())),
+            Pair.of("Resolution", "")
         );
         List<Label> labels = new ArrayList<>();
         for (int i = 0; i < data.size(); i++) {
@@ -55,7 +56,7 @@ public class SettingsScreen extends TerminalScreen {
         List<Label> labels = new ArrayList<>();
         for (int i = 0; i < data.size(); i++) {
             var elt = data.get(i);
-            labels.add(toLabel(formatSetting(i+3, elt.first(), elt.second())));
+            labels.add(toLabel(formatSetting(i+4, elt.first(), elt.second())));
         }
         return labels;
     }
@@ -91,9 +92,10 @@ public class SettingsScreen extends TerminalScreen {
             switch (n) {
                 case 1 -> g.settings.setSkipLogingScreen(!g.settings.isSkipLogingScreen());
                 case 2 -> g.settings.setSoundEffects(!g.settings.isSoundEffects());
-                case 3 -> g.settings.setShowCityLabels(!g.settings.isShowCityLabels());
-                case 4 -> g.settings.setColorNukesPerParty(!g.settings.isColorNukesPerParty());
-                case 5 -> g.settings.setShowDebugScenario(!g.settings.isShowDebugScenario());
+                case 3 -> g.sm().notify(this.getClass().getSimpleName(), "dm");
+                case 4 -> g.settings.setShowCityLabels(!g.settings.isShowCityLabels());
+                case 5 -> g.settings.setColorNukesPerParty(!g.settings.isColorNukesPerParty());
+                case 6 -> g.settings.setShowDebugScenario(!g.settings.isShowDebugScenario());
                 default -> throw new NumberFormatException();
             }
             g.settings.save();

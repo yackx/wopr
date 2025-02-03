@@ -65,10 +65,22 @@ subprojects {
     maven { url 'https://jitpack.io' }
   }
 
+  configurations {
+    mockitoAgent
+  }
   dependencies {
     implementation "org.json:json:20241224"
     implementation "org.jetbrains:annotations:26.0.1"
     testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-core:5.14.2'
+    testImplementation 'org.mockito:mockito-inline:5.2.0'
+    mockitoAgent('org.mockito:mockito-core:5.14.2') { transitive = false }
+  }
+
+  tasks {
+    test {
+      jvmArgs += "-javaagent:${configurations.mockitoAgent.asPath}"
+    }
   }
 }
 

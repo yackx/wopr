@@ -1,11 +1,14 @@
 package be.sugoi.wopr;
 
+import be.sugoi.wopr.dm.DisplayManager;
+import be.sugoi.wopr.dm.DisplayModeReplicant;
+import be.sugoi.wopr.dm.ScreenResolution;
+import be.sugoi.wopr.log.LoggerConfig;
 import be.sugoi.wopr.programs.thermo.entities.Cities;
 import be.sugoi.wopr.programs.thermo.entities.Countries;
 import be.sugoi.wopr.programs.thermo.entities.SimulationSpeed;
 import be.sugoi.wopr.programs.thermo.entities.scenario.Scenario;
 import be.sugoi.wopr.programs.thermo.entities.scenario.ScenarioMaker;
-import be.sugoi.wopr.log.LoggerConfig;
 import be.sugoi.wopr.theme.Theme;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
@@ -21,8 +24,8 @@ import java.util.List;
 import java.util.Map;
 
 public class Main extends Game {
-    public static final int SCREEN_WIDTH = 1280;
-    public static final int SCREEN_HEIGHT = 800;
+    public static final int DEFAULT_SCREEN_WIDTH = 1280;
+    public static final int DEFAULT_SCREEN_HEIGHT = 800;
     public static final float WORLD_WIDTH = 1.25f;
     public static final float WORLD_HEIGHT = 1.0f;
 
@@ -56,7 +59,9 @@ public class Main extends Game {
     @Override
     public void create() {
         LoggerConfig.configureLogger();
-        Gdx.graphics.setWindowedMode(SCREEN_WIDTH, SCREEN_HEIGHT);
+        showDisplayModes();
+
+        Gdx.graphics.setWindowedMode(DEFAULT_SCREEN_WIDTH, DEFAULT_SCREEN_HEIGHT);
         camera = new OrthographicCamera();
         fitViewport = new FitViewport(WORLD_WIDTH, WORLD_HEIGHT, camera);
         screenViewport = new ScreenViewport(camera);
@@ -67,6 +72,8 @@ public class Main extends Game {
         fm = createFonts();
         settings = loadSettings();
         theme = new Theme(settings.getTheme());
+
+        setGraphics();
 
         countries = new Countries();
         countries.load();
@@ -135,6 +142,35 @@ public class Main extends Game {
 
     public ScreenManager sm() {
         return screenManager;
+    }
+
+    private void showDisplayModes() {
+        System.out.println("*** DM");
+        for (var mode : DisplayManager.listDisplayModes()) {
+            System.out.println(mode);
+        }
+    }
+
+    public void setGraphics() {
+        if (settings.isWindowed()) {
+            var optResolution = settings.getWindowedScreenResolution();
+            if (optResolution.isPresent()) {
+                DisplayManager.changeScreenResolution(optResolution.get());
+            } else {
+                DisplayManager.changeScreenResolution(new ScreenResolution(DEFAULT_SCREEN_WIDTH, DEFAULT_SCREEN_HEIGHT));
+            }
+        } else {
+            var optMode = settings.getFullScreenDisplayMode();
+            if (optMode.isPresent()) {
+                // TODO Check this mode is available
+                DisplayManager.changeDisplayMode(optMode.get());
+            } else {
+                var available = DisplayManager.listDisplayModes();
+                var safest = DisplayManager.getSafestDisplayMode(available);
+                DisplayManager.changeDisplayMode(safest);
+                settings.setFullScreenDisplayMode(DisplayModeReplicant.fromDisplayMode(safest));
+            }
+        }
     }
 
     @Override
