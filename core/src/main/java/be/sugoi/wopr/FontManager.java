@@ -91,7 +91,7 @@ public class FontManager implements Disposable {
 
     /// Set the scale for all fonts.
     ///
-    /// If the new scale is different than the current one,
+    /// If the new scale is different from the current one,
     /// all fonts will be regenerated.
     ///
     /// @param scaleXY Scale (both X and Y)
