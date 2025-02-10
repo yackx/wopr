@@ -114,10 +114,6 @@ public class FontManager implements Disposable {
         fonts.values().stream().map(FontWithInfo::font).forEach(BitmapFont::dispose);
     }
 
-    public void disposeFont(String name) {
-        getFont(name).dispose();
-    }
-
     @Override
     public void dispose() {
         disposeAllFonts();
