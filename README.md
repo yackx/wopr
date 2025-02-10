@@ -52,7 +52,7 @@ The EUPL is the European Free/Open Source Software (F/OSS) licence. It is compat
               
 ## Credits
 
-- [Terminal sound](https://www.youtube.com/watch?v=DP-_QNCx51s) by [soundeffects7746](www.youtube.com/@soundeffects7746)
+- [Terminal sound](https://www.youtube.com/watch?v=DP-_QNCx51s) by [soundeffects7746](https://www.youtube.com/@soundeffects7746)
 - Launch sound borrowed from [strider alarm](https://www.youtube.com/watch?v=S8-67-zGZUE) in Half-Life2
 - [3270 Nerd Font](https://www.nerdfonts.com/font-downloads) derived from IBM 3270
 
