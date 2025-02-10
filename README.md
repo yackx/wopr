@@ -12,7 +12,7 @@ You automatically log in to WOPR using your terminal. Several strategy games are
 
 The thermonuclear war gameplay focuses narrowly on direct casualties. There are a few scenarios available involving countries with nuclear capabilities. You choose one and you let the simulation run its course. Nukes are launched from predetermined launch sites (facilities, submarine or mobile).
 
-⬇️ Download the latest build from the releases section.
+⬇️ Download the latest build from the [releases section](https://github.com/yackx/wopr/releases).
         
 ## Features
 
