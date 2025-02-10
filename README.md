@@ -1,7 +1,9 @@
 # WOPR
                  
 **Thermonuclear war simulation reminiscent of an eighties movie**
-     
+
+<img width="1252" alt="world" src="https://github.com/user-attachments/assets/69ecb4ec-3770-46b3-8181-b8302f83a3fe" />
+    
 ## At a glance
 
 This toy simulation is a proof-of-concept but it is already playable.
@@ -51,3 +53,14 @@ See [LICENSE.txt]()
 - [Terminal sound](https://www.youtube.com/watch?v=DP-_QNCx51s) by [soundeffects7746](www.youtube.com/@soundeffects7746)
 - Launch sound borrowed from [strider alarm](https://www.youtube.com/watch?v=S8-67-zGZUE) in Half-Life2
 - [3270 Nerd Font](https://www.nerdfonts.com/font-downloads) derived from IBM 3270
+
+## Samples
+
+No winner
+
+<img width="1498" alt="no_winner" src="https://github.com/user-attachments/assets/1dbb9537-cf20-4033-b924-fe166d3ec7a4" />
+
+Several themes included (Pascal theme)
+
+<img width="1513" alt="pascal" src="https://github.com/user-attachments/assets/1d5660f5-ada8-42d9-a0d7-a46f43b83bd1" />
+
