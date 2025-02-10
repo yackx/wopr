@@ -1,11 +1,15 @@
 package be.sugoi.wopr;
 
+import be.sugoi.wopr.dm.DisplayModeReplicant;
+import be.sugoi.wopr.dm.ScreenResolution;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.utils.GdxRuntimeException;
+import org.jetbrains.annotations.NotNull;
 
 import java.io.FileNotFoundException;
 import java.util.List;
+import java.util.Optional;
 
 @SuppressWarnings("unused")
 public class Settings {
@@ -18,6 +22,9 @@ public class Settings {
     private boolean showDebugScenario = false;
     private boolean skipLogingScreen = false;
     private boolean soundEffects = true;
+    private boolean windowed = true;
+    private DisplayModeReplicant fullScreenDisplayMode;
+    private ScreenResolution windowedScreenResolution;
 
     private FileHandle createFileHandle() {
         var homeDir = System.getProperty("user.home");
@@ -43,18 +50,21 @@ public class Settings {
     }
 
     public void save() {
-        var text = convertToText();
+        var text = toText();
         saveFile(text);
     }
 
-    private List<String> convertToText() {
+    private List<String> toText() {
         return List.of(
             "theme=" + theme,
             "war.labels.city=" + showCityLabels,
             "war.nukes.multicolor=" + colorNukesPerParty,
             "war.debug.scenario=" + showDebugScenario,
             "login.skip=" + skipLogingScreen,
-            "sounds=" + soundEffects
+            "sounds=" + soundEffects,
+            "graphics.windowed=" + windowed,
+            "graphics.display_mode=" + fullScreenDisplayMode.toText(),
+            "graphics.screen_resolution=" + windowedScreenResolution.toText()
         );
     }
 
@@ -80,6 +90,9 @@ public class Settings {
                 case "war.debug.scenario" -> showDebugScenario = Boolean.parseBoolean(v);
                 case "login.skip" -> skipLogingScreen = Boolean.parseBoolean(v);
                 case "sounds" -> soundEffects = Boolean.parseBoolean(v);
+                case "graphics.windowed" -> windowed = Boolean.parseBoolean(v);
+                case "graphics.display_mode" -> fullScreenDisplayMode = DisplayModeReplicant.fromText(v);
+                case "graphics.screen_resolution" -> windowedScreenResolution = ScreenResolution.fromText(v);
                 default -> System.err.println("Ignoring setting: " + k);
             }
         }
@@ -139,5 +152,33 @@ public class Settings {
 
     public void setSoundEffects(boolean soundEffects) {
         this.soundEffects = soundEffects;
+    }
+
+    public Optional<DisplayModeReplicant> getFullScreenDisplayMode() {
+        return Optional.ofNullable(fullScreenDisplayMode);
+    }
+
+    public void setFullScreenDisplayMode(@NotNull DisplayModeReplicant fullScreenDisplayMode) {
+        this.fullScreenDisplayMode = fullScreenDisplayMode;
+    }
+
+    public boolean isWindowed() {
+        return windowed;
+    }
+
+    public void setWindowed(boolean windowed) {
+        this.windowed = windowed;
+    }
+
+    public Optional<ScreenResolution> getWindowedScreenResolution() {
+        return Optional.ofNullable(windowedScreenResolution);
+    }
+
+    public void setWindowedScreenResolution(ScreenResolution windowedScreenResolution) {
+        this.windowedScreenResolution = windowedScreenResolution;
+    }
+
+    public void unsetWindowedScreenResolution() {
+        windowedScreenResolution = null;
     }
 }

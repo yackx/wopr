@@ -54,13 +54,25 @@ public class FontManager implements Disposable {
     public BitmapFont newFont(
         String ttf, String name, int size, float scale, FreeTypeFontGenerator.FreeTypeFontParameter parameter
     ) {
-        // TODO what if font already exists?
-        parameter.size = size;
+        // Two strategies:
+        //
+        // 1. Screen view
+        // The size is adjusted by the scale, and the actual scale is always 1.
+        // This allows for sharp characters.
+        //
+        // 2. Graphics
+        // The scale is very small, for instance 1.0f/1200f so the size has to remain unchanged,
+        // but the font is actually scaled.
+        var isGraphics = scale < 0.1f;  // good enough threshold
+        var actualSize = isGraphics ? size : (int) (size * scale);
+        var actualScale = isGraphics ? scale : 1f;
+
         parameter.characters += "█┌┐└┘│─├┤┬┴⫽";
         BitmapFont font;
+        parameter.size = actualSize;
         font = generators.get(ttf).generateFont(parameter);
         font.setUseIntegerPositions(false);
-        font.getData().setScale(scale);
+        font.getData().setScale(actualScale);
         var fontWithInfo = new FontWithInfo(font, ttf, name, size, parameter);
         fonts.put(name, fontWithInfo);
         return fontWithInfo.font();

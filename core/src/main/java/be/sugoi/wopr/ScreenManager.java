@@ -1,10 +1,7 @@
 package be.sugoi.wopr;
 
 import be.sugoi.wopr.programs.thermo.screens.*;
-import be.sugoi.wopr.terminal.LoginScreen;
-import be.sugoi.wopr.terminal.ProgramScreen;
-import be.sugoi.wopr.terminal.SettingsScreen;
-import be.sugoi.wopr.terminal.ThemeScreen;
+import be.sugoi.wopr.terminal.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 
@@ -50,14 +47,13 @@ public class ScreenManager {
                 throw invalidEvent(origin, event);
             }
         } else if (SettingsScreen.class.getSimpleName().equals(origin)) {
-            if (event.equals("back")) {
-                goBack();
-                return;
-            } else if (event.equals("settings")) {
-                return; // self
-            } else {
-                throw invalidEvent(origin, event);
+            switch (event) {
+                case "back" -> goBack();
+                case "settings" -> {}  // self
+                case "dm" -> gotoScreen(DisplaySettingsScreen.class);
+                default -> throw invalidEvent(origin, event);
             }
+            return;
         } else {
             // System-wide events
             switch (event) {
@@ -125,6 +121,13 @@ public class ScreenManager {
                 default -> throw invalidEvent(origin, event);
             }
             return;
+        }
+
+        if (DisplaySettingsScreen.class.getSimpleName().equals(origin)) {
+            if ("back".equals(event)) {
+                gotoScreen(SettingsScreen.class);
+                return;
+            }
         }
 
         throw invalidEvent(origin, event);
