@@ -48,7 +48,7 @@ The code leverages functional programming. Although it may be unwise in for reso
 
 [EUPL - European Union Public License version 1.2](LICENSE.txt)
 
-The EUPL is the European Free/Open Source Software (F/OSS) licence. It is compatible with GLP-3.0 and available in 23 languages. [More info](https://interoperable-europe.ec.europa.eu/collection/eupl/introduction-eupl-licence)
+The EUPL is the European Free/Open Source Software (F/OSS) license. It is compatible with GLP-3.0 and available in 23 languages. [More info](https://interoperable-europe.ec.europa.eu/collection/eupl/introduction-eupl-licence)
               
 ## Credits
 
